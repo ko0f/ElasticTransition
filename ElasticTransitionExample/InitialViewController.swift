@@ -18,9 +18,9 @@ class InitialViewController: UIViewController {
     super.viewDidLoad()
     
     // customization
-    transition.sticky = true
+    transition.sticky = false
     transition.showShadow = true
-    transition.panThreshold = 0.3
+    transition.panThreshold = 0.1
     transition.transformType = .translateMid
     
 //    transition.overlayColor = UIColor(white: 0, alpha: 0.5)
@@ -54,8 +54,8 @@ class InitialViewController: UIViewController {
   }
   
   @IBAction func codeBtnTouched(_ sender: AnyObject) {
-    transition.edge = .left
-    transition.startingPoint = sender.center
+//    transition.edge = .left
+//    transition.startingPoint = sender.center
     performSegue(withIdentifier: "menu", sender: self)
   }
   
